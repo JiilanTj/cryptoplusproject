@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - CryptoLab</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'profileapp/bootstrap/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'profileapp/css/fontawesome/css/all.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'profileapp/css/icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'profileapp/css/style.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'profileapp/css/sweetalert.css' %}"
+    />
+  </head>
+  <body class="crypt-dark">
+    <header>
+      <div class="crypt-header">
+        <div class="container-fluid crypt-container">
+          <div class="row">
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12">
+              <div class="crypt-logo">
+                <a href="#"
+                  ><img
+                    src="{% static 'profileapp/images/logo.png' %}"
+                    alt="CryptoLab"
+                    style="height: 45px; top: 5px"
+                /></a>
+              </div>
+            </div>
+            <i
+              class="menu-toggle fas fa-bars d-xs-block d-sm-block d-md-none"
+            ></i>
+            <div
+              class="mobile-menu col-xl-11 col-lg-11 col-md-11 d-none d-md-block d-lg-block"
+            >
+              <ul class="crypt-heading-menu float-left">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >markets</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Markets</a>
+                    <a class="dropdown-item" href="#">Markets Line</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >finance</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Technical Analysis</a>
+                    <a class="dropdown-item" href="#">Economic Calendar</a>
+                    <a class="dropdown-item" href="#">Screener</a>
+                  </div>
+                </li>
+                <li><a href="#">buy-sell</a></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >trade</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Trade Basic</a>
+                    <a class="dropdown-item" href="#">Trade Edited</a>
+                    <a class="dropdown-item" href="#">Trade FullScreen</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="crypt-heading-menu float-right">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >pages</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Forgot Password</a>
+                    <a class="dropdown-item" href="#">Auth Login</a>
+                    <a class="dropdown-item" href="#">Register</a>
+                    <a class="dropdown-item" href="#">404</a>
+                  </div>
+                </li>
+                <li><a href="#">contact us</a></li>
+                <li class="crypt-box-menu"><a href="#">login</a></li>
+                <li class="crypt-box-menu">
+                  <a href="#">
+                    <button>open an account</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+          <div class="text-center pt-5 pb-5">
+            <h3 class="p-5">Your Profile</h3>
+            <div class="crypt-form shadow-lg rounded p-5 mt-3">
+              <div class="crypt-form-top text-center">
+                <div>
+                  <h5>Portfolio</h5>
+                  <ul id="portfolio-list" class="list-unstyled">
+                    <!-- List of user's investments will be displayed here -->
+                  </ul>
+                </div>
+                <div>
+                  <h5>Coins Purchased</h5>
+                  <ul id="coins-list" class="list-unstyled">
+                    <!-- List of purchased coins will be displayed here -->
+                  </ul>
+                </div>
+              </div>
+              <div class="float-right form-itext">
+                <span class="pr-1">Edit your profile</span><a href="#">here!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-bar-area">
+      <div class="container">
+        <div class="row">
+          <div class="footer-bar-contain col-lg-12 col-12">
+            <div class="footer-bar-flat">
+              <h3>Start Learning Trade Now. Completely Free!</h3>
+              <div class="footer-bar-flat-button">
+                <button class="btn btn-lg btn-yellow">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+            <a href="#" class="logo-footer">
+              <img
+                src="{% static 'profileapp/images/logo.png' %}"
+                height="36"
+                alt=""
+              />
+            </a>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="list-unstyled social-icon social mb-0 mt-4">
+              <li class="list-inline-item">
+                <a href="#" class="rounded"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="rounded"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="rounded"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="rounded"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d"
+          >
+            <h4 class="text-light footer-head">Company</h4>
+            <ul class="list-unstyled footer-list mt-4">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d"
+          >
+            <h4 class="text-light footer-head">Support</h4>
+            <ul class="list-unstyled footer-list mt-4">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Term of service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d"
+          >
+            <h4 class="text-light footer-head">Products</h4>
+            <ul class="list-unstyled footer-list mt-4">
+              <li><a href="#">Stock Screener</a></li>
+              <li><a href="#">Markets</a></li>
+              <li><a href="#">Economic Calendar</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+            <h4 class="text-light footer-head">Languages</h4>
+            <ul class="list-unstyled footer-list mt-4">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Deutsch</a></li>
+              <li><a href="#">Espanol</a></li>
+              <li><a href="#">Italiano</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'profileapp/js/jquery.js' %}"></script>
+    <script src="{% static 'profileapp/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'profileapp/js/sweetalert.js' %}"></script>
+  </body>
+</html>
